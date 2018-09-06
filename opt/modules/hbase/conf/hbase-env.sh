@@ -47,6 +47,7 @@ export HBASE_OPTS="-XX:+UseConcMarkSweepGC"
 
 # This enables basic gc logging to its own file.
 # If FILE-PATH is not replaced, the log file(.gc) would still be generated in the HBASE_LOG_DIR .
+export HBASE_LOG_DIR=/data/logs/hbase
 # export SERVER_GC_OPTS="-verbose:gc -XX:+PrintGCDetails -XX:+PrintGCDateStamps -Xloggc:<FILE-PATH>"
 
 # This enables basic GC logging to its own file with automatic log rolling. Only applies to jdk 1.6.0_34+ and 1.7.0_2+.
