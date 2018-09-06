@@ -1,0 +1,17 @@
+#!/bin/bash  
+#chkconfig: 2345 80 10 
+#description: service zookeeper  
+export    JAVA_HOME=/opt/modules/jdk7
+export    ZOO_LOG_DIR=/data/logs/zookeeper
+export    ZOOKEEPER_HOME=/opt/modules/zookeeper 
+case  "$1"   in  
+          start)  su  kfk   ${ZOOKEEPER_HOME}/bin/zkServer.sh   start;;  
+          start-foreground)  su  kfk  ${ZOOKEEPER_HOME}/bin/zkServer.sh    start-foreground;;  
+          stop)  su  kfk   ${ZOOKEEPER_HOME}/bin/zkServer.sh   stop;;  
+          status)  su kfk  ${ZOOKEEPER_HOME}/bin/zkServer.sh    status;;  
+          restart)  su kfk   ${ZOOKEEPER_HOME}/bin/zkServer.sh   restart;;  
+          upgrade)su kfk   ${ZOOKEEPER_HOME}/bin/zkServer.sh   upgrade;;  
+          print-cmd)su kfk   ${ZOOKEEPER_HOME}/bin/zkServer.sh   print-cmd;;  
+          *)  echo  "requirestart|start-foreground|stop|status|restart|print-cmd";;  
+esac  
+
