@@ -1,0 +1,4 @@
+app_afloan_moni_030701_detail_FIELD_S=data_dt text, cust_no text, cust_name text, rel_type text, creditlimitamount decimal(18,2), sequoiadb_load_date string default $(date +%Y%m%d)
+
+app_afloan_moni_030701_detail_FIELD_S=data_dt text, cust_no text, cust_name text, rel_type text, creditlimitamount decimal(18,2), sequoiadb_load_date string default $(date +%Y%m%d)
+

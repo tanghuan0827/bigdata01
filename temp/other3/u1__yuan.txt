@@ -1,0 +1,14 @@
+app_afloan_moni_030701_detail,data_dt,text
+app_afloan_moni_030701_detail,cust_no,text
+app_afloan_moni_030701_detail,cust_name,text
+app_afloan_moni_030701_detail,rel_type,text
+app_afloan_moni_030701_detail,creditlimitamount,"decimal(18,2)"
+,,
+app_afloan_moni_030701_stat,data_dt,text
+app_afloan_moni_030701_stat,cust_no,text
+app_afloan_moni_030701_stat,is_add,text
+,,
+app_afloan_moni_020601_stat,data_dt,text
+app_afloan_moni_020601_stat,cust_no,text
+app_afloan_moni_020601_stat,risk_level,text
+app_afloan_moni_020601_stat,rel_name,text
