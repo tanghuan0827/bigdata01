@@ -1,0 +1,1 @@
+XjobId=job_1536297227317_0002,submitTime=1536297304225,launchTime=1536297313876,firstMapTaskLaunchTime=1536297316584,firstReduceTaskLaunchTime=1536297326434,finishTime=1536297333421,resourcesPerMap=1024,resourcesPerReduce=1024,numMaps=1,numReduces=1,user=kfk,queue=default,status=SUCCEEDED,mapSlotSeconds=6,reduceSlotSeconds=6,jobName=word count
