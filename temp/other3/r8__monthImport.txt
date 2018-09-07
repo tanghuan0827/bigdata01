@@ -1,0 +1,2 @@
+app_afloan_moni_020601_stat_FIELD_S=data_dt text, cust_no text, risk_level text, rel_name text, sequoiadb_load_date string default $(date +%Y%m%d)
+
