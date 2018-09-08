@@ -33,6 +33,6 @@ export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
 export PATH=$PATH:$HADOOP_HOME/sbin:$HADOOP_HOME/bin
 export HADOOP_INSTALL=$HADOOP_HOME
 
-cd /opt/modules/hadoop
+cd /opt/modules
 
 export HBASE_HOME=/opt/modules/hbase
