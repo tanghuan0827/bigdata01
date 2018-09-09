@@ -30,7 +30,7 @@
 	  <value>true</value>
 	  <description>Whether to include the current database in the Hive prompt.</description>
 	</property>
-	
+<!--
 	<property>
 		<name>hbase.zookeeper.quorum</name>
 		<value>bigdata-pro01.kfk.com,bigdata-pro02.kfk.com,bigdata-pro03.kfk.com</value>
@@ -38,7 +38,7 @@
 	
 	<property>
 		<name>hive.server2.thrift.bind.host</name>
-		<value>bigdata-pro03.kfk.com</value>
+		<value>bigdata-pro02.kfk.com</value>
 	</property>
 	<property>
                 <name>hive.server2.thrift.bind.port</name>
@@ -52,7 +52,7 @@
             <name>hive.server2.authentication</name>
             <value>NOSASL</value>
     </property>
-	
+-->	
 	<property>
 	  <name>hive.metastore.uris</name>
 	  <value>thrift://bigdata-pro01.kfk.com:9083</value>
