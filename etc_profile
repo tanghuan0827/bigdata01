@@ -1,3 +1,7 @@
+
+虚拟机配置网络的时候  改为桥接模式
+===========================================================
+vim /etc/profile
 unset MAILCHECK
 
 #终端提示符颜色
@@ -36,4 +40,6 @@ user=root
 ./support-files/mysql.server start
 
 ======================================================
-ln -s /opt/modules/anaconda3/bin/python /usr/bin/python
+vim /etc/profile
+export PATH=/opt/modules/anaconda3/bin:$PATH
+source /etc/profile
