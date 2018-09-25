@@ -19,9 +19,19 @@ source ~/.bashrc
 
 
 ======================================================================
+./scripts/mysql_install_db --user=root
+
+cd /etc
+rm -rf my.cnf
+
+vim support-files/mysql.server
 :%s`/usr/local`/opt/modules`g
 
+vim ./my.cnf
 port=3306
 datadir=/opt/modules/mysql/data
 socket=/opt/modules/mysql/mysql.sock
 user=root
+
+./support-files/mysql.server start
+
