@@ -14,3 +14,14 @@ export PATH=$JAVA_HOME/bin:$PATH
 export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 
 source ~/.bashrc
+
+
+
+
+======================================================================
+:%s`/usr/local`/opt/modules`g
+
+port=3306
+datadir=/opt/modules/mysql/data
+socket=/opt/modules/mysql/mysql.sock
+user=root
