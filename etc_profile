@@ -1,0 +1,16 @@
+unset MAILCHECK
+
+#终端提示符颜色
+export PS1="\[\e[31;1m\][\u @\h \w]$   \[\e[32;1m\]"
+
+#文件夹颜色
+LS_COLORS='no=00:fi=00:di=01;34;40:ln=37;40:'
+export LS_COLORS
+
+
+
+export JAVA_HOME=/opt/modules/jdk8
+export PATH=$JAVA_HOME/bin:$PATH
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+
+source ~/.bashrc
