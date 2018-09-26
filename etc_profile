@@ -39,6 +39,21 @@ user=root
 
 ./support-files/mysql.server start
 
+#增加远程登陆
+update mysql.user set password=password('123456') where user='root';
+flush privileges;
+grant all privileges on *.* to root@'%' identified by '123456';
+flush privileges;
+
+#开机启动
+cp support-files/mysql.server /etc/init.d/mysqld
+chkconfig --add mysqld
+chkconfig mysqld on
+service mysqld restart
+service mysqld status  
+
+
+
 ======================================================
 vim /etc/profile
 export PATH=/opt/modules/anaconda3/bin:$PATH
