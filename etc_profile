@@ -1,0 +1,45 @@
+
+虚拟机配置网络的时候  改为桥接模式
+===========================================================
+vim /etc/profile
+unset MAILCHECK
+
+#终端提示符颜色
+export PS1="\[\e[31;1m\][\u @\h \w]$   \[\e[32;1m\]"
+
+#文件夹颜色
+LS_COLORS='no=00:fi=00:di=01;34;40:ln=37;40:'
+export LS_COLORS
+
+
+
+export JAVA_HOME=/opt/modules/jdk8
+export PATH=$JAVA_HOME/bin:$PATH
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+
+source ~/.bashrc
+
+
+
+
+======================================================================
+./scripts/mysql_install_db --user=root
+
+cd /etc
+rm -rf my.cnf
+
+vim support-files/mysql.server
+:%s`/usr/local`/opt/modules`g
+
+vim ./my.cnf
+port=3306
+datadir=/opt/modules/mysql/data
+socket=/opt/modules/mysql/mysql.sock
+user=root
+
+./support-files/mysql.server start
+
+======================================================
+vim /etc/profile
+export PATH=/opt/modules/anaconda3/bin:$PATH
+source /etc/profile
