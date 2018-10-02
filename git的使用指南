@@ -69,3 +69,9 @@ git help commit
 git pull https://github.com/tanghuan0827/bigdata01.git master
 
 git push -u origin master
+
+
+查看远程链接url
+git remote -v
+
+
