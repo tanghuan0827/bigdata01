@@ -73,5 +73,5 @@ git push -u origin master
 
 查看远程链接url
 git remote -v
-
+git remote set-url origin https://~.git
 
