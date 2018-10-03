@@ -39,7 +39,9 @@ user=root
 
 ./support-files/mysql.server start
 
-/bin/mysqladmin -u root -h localhost.localdomain password '123456'
+ln -s /opt/modules/mysql/mysql.sock /tmp/mysql.sock 
+bin/mysql -uroot
+
 
 #增加远程登陆
 update mysql.user set password=password('123456') where user='root';
